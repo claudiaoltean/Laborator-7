@@ -31,7 +31,7 @@ function myfuture(){ document.getElementById("nume").innerHTML="Inginer Oltean C
 document.getElementById("nume").style.color="#660066";
 document.getElementById("imagine").src="Claudia1.JPG";
 document.body.style.backgroundColor="#ffad33"
-document.getElementById("imagine").style.opacity="0.5";
+document.getElementById("imagine").style.opacity="0.7";
 document.getElementById("imagine").style.width="300p";
 document.getElementById("imagine").style.border="6px";
 var tabel=document.getElementById("tabel");
@@ -46,6 +46,14 @@ var tabel=document.getElementById("tabel");
  tabel.rows[1].cells[3].innerHTML="Deschisa noilor oportunitati";
  tabel.rows[1].cells[4].innerHTML="Multe vacante";
 }
+function Varstamea()
+{var azi=new Date;
+var Varsta;
+var annastere = document.getElementById("vr").innerHTML;
+var ancurent =azi.getFullYear();
+varsta= ancurent- parseInt(annastere);
+document.getElementById("vr").innerHTML=varsta;
+}
 </script>
 </head>
 <Body>
@@ -53,6 +61,7 @@ var tabel=document.getElementById("tabel");
    <img id="imagine" src="Claudia.jpg">
   <p>Email: claudiaoltean12@yahoo.com </p><br>
   <p>Telefon: 0727xxxxxx</p><br>
+  <p  onmouseover ="Varstamea() "id="vr" >2000</p>
   <button type="button" onclick="myfuture()">Vezi Viitorul</button>
   <p> Asteptarile mele legate de facultate este sa pot sa aprofundez cat mai bine materia si sa am o colaborare cat mai buna cu colegii si profesorii. </p><br>
   <h2>Hobby-urile mele : </h2>
